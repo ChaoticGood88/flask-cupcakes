@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake Shop</title>
+</head>
+
+<body>
+    <h1>Welcome to the Cupcake Shop</h1>
+
+    <h2>Cupcake List</h2>
+    <!-- This list will eventually display cupcakes -->
+    <ul id="cupcake-list">
+        <!-- Cupcakes will appear here -->
+    </ul>
+
+    <h2>Add a New Cupcake</h2>
+    <form id="add-cupcake-form">
+        <label for="flavor">Flavor:</label>
+        <input type="text" id="flavor" name="flavor" required>
+
+        <label for="size">Size:</label>
+        <input type="text" id="size" name="size" required>
+
+        <label for="rating">Rating:</label>
+        <input type="number" step="0.1" id="rating" name="rating" required>
+
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image" placeholder="Optional">
+
+        <button type="submit">Add Cupcake</button>
+    </form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="static/app.js"></script>
+
+
+</html>
